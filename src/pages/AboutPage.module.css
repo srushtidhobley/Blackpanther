@@ -1,0 +1,83 @@
+/* src/pages/AboutPage.module.css */
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Section Styles --- */
+.introSection {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.introSection p {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 16px;
+}
+
+.skillsSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.skillsChart {
+  max-width: 100%;
+  height: auto;
+}
+
+.timelineSection h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+  color: #1a1a1a;
+}
+
+/* --- Timeline Container & Line --- */
+.timelineContainer {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* The vertical line */
+.timelineContainer::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #e0e0e0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.5px; /* (width / 2) */
+}
+
+.cvSection {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.outroSection {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.outroSection p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}

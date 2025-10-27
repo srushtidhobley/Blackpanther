@@ -1,0 +1,84 @@
+/* src/components/ServiceCard.module.css */
+
+.card {
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cardContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 500px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #b6b6b6;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.description {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.7;
+  max-width: 600px; /* Constrains the width for better readability */
+  margin-right: auto;
+  margin-left: 0;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.viewLink {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+  align-self: flex-start;
+  display: flex;        /* 1. Enable Flexbox */
+  align-items: center;  /* 2. Vertically center items (text and icon) */
+  gap: 5px;             /* 3. Add a small space between the text and the icon */
+  transition: color 0.2s ease-in-out;
+}
+
+.viewLink:hover {
+  color: #bfff80; /* primary green color */
+  text-decoration: underline;
+}

@@ -1,0 +1,95 @@
+/* src/components/Navbar.module.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 5%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 90%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 36px; /* Space between each link */
+  margin: 0;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navLinks a:hover {
+  color: #bfff80; 
+}
+
+.navAction {
+  min-width: 150px; /* Prevents layout shifts */
+  text-align: right;
+}
+
+/* Pill nav wrapper (centered rounded container) */
+.pillNav {
+  background: #fff;
+  border-radius: 28px;
+  padding: 8px 20px;
+  border: 1px solid rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+}
+
+/* active state: underline small green bar below the active item */
+.navLinks a.active {
+  color: #111;
+  position: relative;
+}
+
+/* Expose class name for CSS Modules usage (styles.active) */
+.active {
+  font-weight: 700;
+}
+
+.navLinks a.active::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 32px;
+  background: #C6FF52; /* lime-ish underline */
+  border-radius: 4px;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,112 @@
+.page {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.header {
+  
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+
+  font-size: 20px;
+  color: #555;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gridItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.gridItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease; 
+  border-radius: 8px 8px 0 0;
+}
+
+.gridItem:hover {
+  /* Lifts the card slightly */
+  transform: translateY(-5px); 
+  /* Increases the shadow for a "lifted" look */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.gridItem:hover img {
+  transform: scale(1.05); 
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4; /* CORRECT: Aspect ratio applied here to the image container */
+  flex-shrink: 0;
+}
+
+/* Interaction Bar Styles */
+.interactionBar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #f7f7f7;
+  border-top: 1px solid #eee;
+  flex-shrink: 0; 
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.iconButton:hover {
+  color: #1a1a1a;
+}
+
+.iconButton span {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.commentsSection {
+  padding: 8px 15px;
+  font-size: 14px;
+  color: #888;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  flex-shrink: 0;
+  border-radius: 0 0 8px 8px; 
+}
+.commentsSection p {
+  margin: 0;
+}

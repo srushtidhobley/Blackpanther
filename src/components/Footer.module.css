@@ -1,0 +1,83 @@
+/* src/components/Footer.module.css */
+
+.footer {
+  background-color: #2c2c2c; /* A dark charcoal grey */
+  color: #ffffff;
+  padding: 80px 5% 0; /* More padding at the top, none at the bottom for the signature */
+  margin-top: 100px; /* Space above the footer */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.contactInfo {
+  flex: 2;
+  min-width: 250px;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.emailLink {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.emailLink:hover {
+  color: #bfff80; /* Primary green color */
+}
+
+.linksContainer {
+  display: flex;
+  gap: 60px;
+  flex: 3; /* Takes up more space */
+}
+
+.linkColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkColumn li {
+  margin-bottom: 12px;
+}
+
+.linkColumn a {
+  color: #d1d1d1; /* A slightly dimmer white for links */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.linkColumn a:hover {
+  color: #ffffff;
+}
+
+.contactAction {
+  flex: 1;
+  text-align: right;
+  min-width: 200px;
+}
+
+.signature {
+  font-size: clamp(4rem, 20vw, 15rem); /* Responsive font size */
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-top: 1px solid #444444;
+}

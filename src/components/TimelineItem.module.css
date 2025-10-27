@@ -1,0 +1,72 @@
+/* src/components/TimelineItem.module.css */
+
+.container {
+  position: relative;
+  width: 50%;
+  padding: 10px 40px;
+  box-sizing: border-box; /* Ensures padding doesn't affect the 50% width */
+}
+
+/* --- Content Box Styling --- */
+.content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  position: relative;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+  margin: 0 0 12px 0;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+}
+
+/* --- Alignment and Positioning --- */
+
+/* For items on the LEFT side of the timeline */
+.left {
+  left: 0;
+  text-align: right;
+}
+
+/* For items on the RIGHT side of the timeline */
+.right {
+  left: 50%;
+}
+
+/* The circular dot on the timeline */
+.dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border: 3px solid #bfff80; /* Primary green color */
+  border-radius: 50%;
+  top: 30px; /* Aligns the dot vertically with the content */
+  z-index: 10;
+}
+
+/* Position the dot for LEFT items */
+.left .dot {
+  right: -8px; /* (width / 2) -> Places it on the center line */
+}
+
+/* Position the dot for RIGHT items */
+.right .dot {
+  left: -8px; /* (width / 2) -> Places it on the center line */
+}

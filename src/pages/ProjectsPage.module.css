@@ -1,0 +1,71 @@
+/* src/pages/ProjectsPage.module.css */
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Filter Navigation --- */
+.filterNav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.filterNav button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 500;
+  color: #888;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.filterNav button:hover {
+  color: #333;
+}
+
+.filterNav button.active {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+/* Underline effect for the active button */
+.filterNav button.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background-color: #1a1a1a;
+  border-radius: 2px;
+}
+
+/* --- Projects List --- */
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* --- Added Style for Empty State --- */
+.noProjectsMessage {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+  padding: 40px;
+}

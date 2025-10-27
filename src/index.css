@@ -1,0 +1,34 @@
+/* src/index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* --- Define CSS variables for design system --- */
+:root {
+  --font-primary: 'Inter', sans-serif;
+  --color-green: #bfff80;
+  --color-dark-grey: #2c2c2c;
+  --color-text-dark: #1a1a1a;
+  --color-text-light: #555555;
+  --color-background: #ffffff;
+  --color-border: #e0e0e0;
+}
+
+/* --- Global Reset and Defaults --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-text-light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  /* This prevents content from hiding behind a sticky navbar */
+  padding-top: 80px; 
+}

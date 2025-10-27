@@ -1,0 +1,79 @@
+/* src/pages/ContactPage.module.css */
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+  padding: 60px 20px;
+  gap: 30px;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.formContainer {
+  background-color: #2c2c2c; /* Dark charcoal grey */
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #bfff80; /* Your primary green color */
+}
+
+.inputGroup {
+  margin-bottom: 25px;
+}
+
+.inputGroup label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #a0a0a0;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  background-color: #404040;
+  border: 1px solid #555555;
+  border-radius: 8px;
+  padding: 12px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  box-sizing: border-box; /* Important for padding */
+  transition: border-color 0.2s;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: #bfff80;
+}
+
+.inputGroup textarea {
+  resize: vertical;
+}
+
+.socialLinks {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
