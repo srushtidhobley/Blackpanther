@@ -1,6 +1,6 @@
 // src/components/TimelineItem.tsx
 
-import React from 'react';
+//import React from 'react';
 import styles from './TimelineItem.module.css';
 
 interface TimelineItemProps {

@@ -1,6 +1,6 @@
 // src/pages/HomePage.tsx
 
-import React from 'react';
+//import React from 'react';
 import ServiceCard from '../components/ServiceCard';
 import styles from './HomePage.module.css';
 

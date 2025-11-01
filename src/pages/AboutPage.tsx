@@ -1,6 +1,6 @@
 // src/pages/AboutPage.tsx
 
-import React from 'react';
+//import React from 'react';
 import TimelineItem from '../components/TimelineItem';
 import Button from '../components/Button';
 import styles from './AboutPage.module.css';

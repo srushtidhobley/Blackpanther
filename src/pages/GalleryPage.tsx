@@ -1,4 +1,5 @@
-import React, { useReducer } from 'react';
+import { useReducer } from 'react';
+//import React, { useReducer } from 'react';
 import styles from './GalleryPage.module.css'; 
 
 // Import gallery images in the specified order
