@@ -7,13 +7,15 @@ import styles from './ProjectsPage.module.css';
 // --- Import Project Images ---
 import barnHouseImg from '../assets/images/barn-house.jpg';
 import vortexImg from '../assets/images/vortex.jpg';
-import hajmolaImg from '../assets/images/hajmola.jpg';
+//import hajmolaImg from '../assets/images/hajmola.jpg';
 
 // --- Import Blog Images ---
 import imgA from '../assets/images/A.jpeg';
 import imgB from '../assets/images/B.jpeg';
 import imgC from '../assets/images/C.jpeg';
 import imgD from '../assets/images/D.jpeg';
+import echoGardenPdf from '../assets/Interactive-art-storyboarding.pdf';
+import imgE from '../assets/images/abb.jpg';
 
 const projectData = [
   {
@@ -41,6 +43,15 @@ const projectData = [
     videoUrl: 'https://www.youtube.com/embed/ig9jZU4F1Nw',
     category: 'Experiment',
   },
+  {
+  number: '04',
+  title: 'ECHO GARDEN: POLLINATION PLAYGROUND',
+  description:
+    'An interactive art storyboard exploring how visitors influence a digital ecosystem through pollination-inspired interactions. The project highlights UN Sustainable Development Goal 15 (Life on Land) using immersive storytelling, system flow, and conceptual technology.',
+  imageUrl: imgE,
+  link: echoGardenPdf,
+  category: 'Branding',
+},
 ];
 
 const ProjectsPage = () => {
