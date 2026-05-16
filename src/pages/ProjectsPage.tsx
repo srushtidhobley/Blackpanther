@@ -44,6 +44,39 @@ const projectData = [
     category: 'Experiment',
   },
   {
+    number: '05',
+    title: 'INTERACTIVE SCULPTURE',
+    description: 'Detachable Kaleidoscope — a modular interactive sculpture exploring how the structure of information shapes the truths we perceive.',
+    videoUrl: 'https://www.youtube.com/embed/QLhWnRbSY3s',
+    category: 'Experiment',
+    reflectionBlog: `The Detachable Kaleidoscope is a modular interactive sculpture that explores the idea of different truths arising from the same information, depending on its structure. The sculpture consists of four octagon blocks and a kaleidoscope viewing piece stacked on top of each other. Each block features a fragment of dialogue from a fictional police interview scenario. By rearranging the blocks, audiences change the order of the dialogue — and with it, the truth they perceive from the same story.
+
+The idea grew out of discussions about the fragmented nature of information in modern media. Platforms like TikTok, Instagram Reels and X present short-form content that limits the full context of stories. Rather than focusing on misinformation, we focused on the structure of information itself — arguing that truth is not always in the content, but in how that content is arranged.
+
+Concept & Theme
+
+The main theme is the distortion of truth within narratives and the power of interpretation. The kaleidoscope component continuously displays the same images yet in a different structure depending on movement, mirroring how digital platforms fragment and reframe the same story for different audiences. Interactivity here replaces the passive spectator with an active participant — the audience literally becomes the one who shapes the narrative.
+
+Technical Process
+
+The sculpture functions through analogue electronics, Arduino sensing, and audio sequencing within Pure Data. Each octagonal block contains copper contact points and resistors. When the blocks are stacked, the resulting resistor network changes depending on their arrangement, producing different analogue voltage readings that the Arduino sends to Pure Data. Different resistance ranges trigger different arrangements of the narrative audio. Stability in readings was achieved by adding averaging logic to the Arduino, resolving early inconsistencies from the contact points.
+
+Fabrication & Iteration
+
+The modules were fabricated from 3 mm MDF using laser-cut pieces and finger joint construction. Several iterations were needed before the joints were reliable. Copper tape contact pads were added to the exterior faces, with internal resistors soldered to the conductive areas. The kaleidoscope module was built separately from mirrored acrylic arranged in a triangular prism — a component that developed partly through testing rather than prior planning.
+
+Reflection
+
+One of the key relationships that emerged during this project was that between physical interaction and conceptual meaning. By manipulating the sculpture, the story changes — yet without any additional explanation, leaving the audience to construct their own interpretation. The focus on sequencing rather than changing the content was conceptually effective: it showed how the same information can carry entirely different weight depending on its order.
+
+The project also taught us the value of simplicity. More complicated audio systems were considered early on, but simplifying the interaction made the experience clearer and more impactful. Working through the challenges of analogue inconsistencies — far from being failures — actually became part of the installation character, visible and incorporated into the interaction itself.
+
+Overall, the Detachable Kaleidoscope succeeded in creating an interactive art piece that encouraged audiences to reflect on how truth is not fixed, but shaped by structure, arrangement, and the act of interaction itself.
+
+Group Members: Manthan Thool · Pranit Mahamuni · Srushti Dhobley · Anthony Carey
+Module: CS6042 — Interactive Media Project/Workshop 2 | Semester 2025/26`,
+  },
+  {
   number: '04',
   title: 'ECHO GARDEN: POLLINATION PLAYGROUND',
   description:
@@ -128,7 +161,26 @@ const ProjectsPage = () => {
                   {project.description}
                 </p>
 
-                {/* ----- FULL BLOG CONTENT WITH SPACING ----- */}
+                {/* ----- BLOG CONTENT ----- */}
+                {project.reflectionBlog ? (
+                  <>
+                    <h3 style={{ marginTop: '40px' }}>Reflection Blog — Interactive Sculpture</h3>
+                    <div
+                      style={{
+                        whiteSpace: 'pre-line',
+                        lineHeight: '1.8',
+                        fontSize: '16px',
+                        marginTop: '20px',
+                        marginBottom: '40px',
+                        maxWidth: '800px',
+                        margin: '20px auto 40px',
+                      }}
+                    >
+                      {project.reflectionBlog}
+                    </div>
+                  </>
+                ) : (
+                <>
                 <h3 style={{ marginTop: '40px' }}>Blog On Video Production</h3>
 
                 <div
@@ -224,6 +276,8 @@ const ProjectsPage = () => {
                     />
                   </div>
                 </div>
+                </>
+                )}
               </div>
             ) : (
               <div
