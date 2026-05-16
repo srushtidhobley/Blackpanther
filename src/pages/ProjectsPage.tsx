@@ -49,32 +49,15 @@ const projectData = [
     description: 'Detachable Kaleidoscope — a modular interactive sculpture exploring how the structure of information shapes the truths we perceive.',
     videoUrl: 'https://www.youtube.com/embed/QLhWnRbSY3s',
     category: 'Experiment',
-    reflectionBlog: `The Detachable Kaleidoscope is a modular interactive sculpture that explores the idea of different truths arising from the same information, depending on its structure. The sculpture consists of four octagon blocks and a kaleidoscope viewing piece stacked on top of each other. Each block features a fragment of dialogue from a fictional police interview scenario. By rearranging the blocks, audiences change the order of the dialogue — and with it, the truth they perceive from the same story.
+    reflectionBlog: `This project helped me understand interactivity as something more physical, relational, and unpredictable than a simple button response system. Instead of treating the sculpture as a fixed object, we designed it as a modular structure whose meaning changed through displacement, contact, and audience participation, which made the work feel alive and responsive.
 
-The idea grew out of discussions about the fragmented nature of information in modern media. Platforms like TikTok, Instagram Reels and X present short-form content that limits the full context of stories. Rather than focusing on misinformation, we focused on the structure of information itself — arguing that truth is not always in the content, but in how that content is arranged.
+From the beginning, I found the idea of using cuboids as both sculptural forms and electrical contact points especially interesting. It pushed me to think about how material decisions can shape interaction, not just appearance, and how a structure can become a system of signals when its parts are rearranged. This was an important shift in my thinking, because it connected physical making with computational behaviour in a way that felt both technical and conceptual.
 
-Concept & Theme
+One of the most valuable parts of the project was translating an abstract idea into a functional prototype. Working with resistors, voltage values and Arduino input made me more aware of how small physical changes can produce measurable shifts in data, and how those shifts can be interpreted creatively in software. I also learned that designing interaction is not only about making something work, but about shaping the experience of cause, effect and uncertainty for the user.
 
-The main theme is the distortion of truth within narratives and the power of interpretation. The kaleidoscope component continuously displays the same images yet in a different structure depending on movement, mirroring how digital platforms fragment and reframe the same story for different audiences. Interactivity here replaces the passive spectator with an active participant — the audience literally becomes the one who shapes the narrative.
+The project also strengthened my collaborative practice. Because the sculpture was developed as part of a group, I had to balance my own ideas with the wider concept, the constraints of fabrication, and the shared goal of producing a coherent interactive system. This made the process more realistic and closer to professional design work, where creative decisions are usually negotiated rather than made in isolation.
 
-Technical Process
-
-The sculpture functions through analogue electronics, Arduino sensing, and audio sequencing within Pure Data. Each octagonal block contains copper contact points and resistors. When the blocks are stacked, the resulting resistor network changes depending on their arrangement, producing different analogue voltage readings that the Arduino sends to Pure Data. Different resistance ranges trigger different arrangements of the narrative audio. Stability in readings was achieved by adding averaging logic to the Arduino, resolving early inconsistencies from the contact points.
-
-Fabrication & Iteration
-
-The modules were fabricated from 3 mm MDF using laser-cut pieces and finger joint construction. Several iterations were needed before the joints were reliable. Copper tape contact pads were added to the exterior faces, with internal resistors soldered to the conductive areas. The kaleidoscope module was built separately from mirrored acrylic arranged in a triangular prism — a component that developed partly through testing rather than prior planning.
-
-Reflection
-
-One of the key relationships that emerged during this project was that between physical interaction and conceptual meaning. By manipulating the sculpture, the story changes — yet without any additional explanation, leaving the audience to construct their own interpretation. The focus on sequencing rather than changing the content was conceptually effective: it showed how the same information can carry entirely different weight depending on its order.
-
-The project also taught us the value of simplicity. More complicated audio systems were considered early on, but simplifying the interaction made the experience clearer and more impactful. Working through the challenges of analogue inconsistencies — far from being failures — actually became part of the installation character, visible and incorporated into the interaction itself.
-
-Overall, the Detachable Kaleidoscope succeeded in creating an interactive art piece that encouraged audiences to reflect on how truth is not fixed, but shaped by structure, arrangement, and the act of interaction itself.
-
-Group Members: Manthan Thool · Pranit Mahamuni · Srushti Dhobley · Anthony Carey
-Module: CS6042 — Interactive Media Project/Workshop 2 | Semester 2025/26`,
+In retrospect, I see this project as a good example of my interest in interaction design at the intersection of physical computing, systems thinking, and experiential storytelling. It encouraged me to work more confidently across design and technical development, while also reminding me that successful interaction design depends on clarity, experimentation, and iteration. Overall, the project expanded my understanding of how simple modular components can generate complex interactive behaviour when they are designed with intention.`,
   },
   {
   number: '04',
